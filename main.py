@@ -11,7 +11,7 @@ st.header("캘리포니아 집값 예측 프로그램")
 cols = [ 'MedInc','HouseAge','AveRooms','AveBedrms', 'Population','AveOccup','Latitude','Longitude']
 datas = [0]*8
 for idx, col in enumerate(cols):
-    data[idx] = st.number_input(col)
+    datas[idx] = st.number_input(col)
 x = np.array(datas).reshape(1, -1)
 x.shape
 
