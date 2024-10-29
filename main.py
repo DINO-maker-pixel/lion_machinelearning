@@ -15,7 +15,7 @@ for idx, col in enumerate(cols):
 x = np.array(datas).reshape(1, -1)
 x.shape
 
-with open("rf_housing.pickle", "rb") as f:
+with open("rf_house.pickle", "rb") as f:
     rf_model = pickle.load(f)
 
 y = rf_model.predict(x)
